@@ -15,8 +15,11 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   go_router: ^11.1.4
+  google_fonts: ^6.1.0
   heroicons: ^0.9.0
+  hydrated_bloc: ^9.1.2
   intl: ^0.18.0
+  path_provider: ^2.1.1
 
 dev_dependencies:
   bloc_test: ^9.1.4
@@ -32,3 +35,8 @@ flutter:
   - assets/
   - assets/images/
   - assets/fonts/   
+
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/src/generated/
+  filename: assets.dart
