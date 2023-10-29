@@ -32,4 +32,9 @@ extension ContextX on BuildContext {
   Color get subtitleColor => const Color(0xFF6F6F87);
   Color get boxColor => const Color(0xFF383344);
   //Colors from theme
+
+  OverlayState get overlay => Overlay.of(this);
+  OverlayEntry createOverlayEntry(Widget widget) =>
+      OverlayEntry(builder: (_) => widget);
+  void showOverlay(OverlayEntry entry) => overlay.insert(entry);
 }
